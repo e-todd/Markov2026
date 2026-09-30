@@ -93,7 +93,7 @@ for t in time:
 
 
 plt.plot(time, P_I_F, label="Exact Conditional PMF")
-plt.hist(time_I[end_I == "F"], density='True', label="Simulation Probabilties")
+plt.hist(time_I[end_I == "F"], density='True', bins=30, label="Simulation Probabilties")
 plt.title('Time until Folded State')
 plt.xlabel('Time (steps)')
 plt.ylabel('Probability of Steps Until Reach Folded')
@@ -102,7 +102,7 @@ plt.show()
 
 
 plt.plot(time, P_I_A, label="Exact Conditional PMF")
-plt.hist(time_I[end_I == "A"],density='True', color='red', label="Simulation Probabilties")
+plt.hist(time_I[end_I == "A"],density='True', bins=30, color='red', label="Simulation Probabilties")
 plt.title('Time Until Aggregate State')
 plt.xlabel('Time (steps)')
 plt.ylabel('Probability of Steps Until Reach Aggregated')
